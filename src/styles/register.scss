@@ -1,0 +1,17 @@
+.register-text{
+    color: #008A45;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+}
+
+.register-container{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: red;
+}

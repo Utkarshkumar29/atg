@@ -1,0 +1,99 @@
+.post-container{
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:650px){
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    @media (max-width:426px){
+        display: none;
+    }
+}
+
+.items-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+
+    @media (max-width:700px){
+        gap: 15px;
+    }
+}
+
+.card-container{
+    display: flex;
+
+    @media (max-width:500px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.dropdown{
+    display: none;
+
+    @media (max-width:426px){
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.wrapper{
+    display: none;
+
+    @media (max-width:426px){
+        display: block;
+        background: linear-gradient(to bottom, rgba(255, 92, 92, 1), rgba(240, 86, 138, 1));
+        padding: 5px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+        margin: 2px;
+    }
+}
+
+
+.line {
+    position: relative;
+  }
+  
+.line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid lightgrey;
+}
+
+.clicked {
+    font-weight: bold;
+    position: relative;
+}
+
+.clicked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid black;
+    z-index: 1;
+}
